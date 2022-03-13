@@ -19,9 +19,9 @@ class CategoryController extends Controller
             'category_name' => 'required|unique:categories|max:255',
         ],
         [
-            'category_name.required' => 'Please input categroy name'
-        ]
-    
-    );
+            'category_name.required' => 'Please input categroy name',
+            'category_name.max' => 'Please input less than 255 charachters'
+        ]);
+
     }
 }
